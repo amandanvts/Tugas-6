@@ -1,4 +1,5 @@
-render() {
+
+  render() {
     const LoginButton = withRouter(({ history }) => (
       <button
         className='btn btn-outline-primary'
@@ -41,7 +42,7 @@ render() {
                     <input
                       className='border border-dark w-50'
                       type='text'
-                      placeholder='Masukkan Username Anda'
+                      placeholder='Input username'
                     />
                   </td>
                 </tr>
@@ -52,7 +53,7 @@ render() {
                     <input
                       className='border border-dark w-50'
                       type='text'
-                      placeholder='Masukkan Password Anda'
+                      placeholder='Input Password'
                     />
                   </td>
                 </tr>
@@ -73,7 +74,7 @@ render() {
         render: () =>
           this.state.isAuth ? (
             <div className='container text-center'>
-              <h2 className='fw-bold'>Profile Mahasiswa</h2>
+              <h2 className='fw-bold'>Student Profile</h2>
               <table className='table table-borderless text-start'>
                 <tbody>
                   <tr>
